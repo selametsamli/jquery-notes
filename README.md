@@ -35,7 +35,7 @@ $(document).ready(function(){
        $("#Selamet").hide(100);
     });
 });
-
+...
   <div class="selamet">Bana Tıkla</div>
     <ul class="selamet">
         <li>1.Li</li>
@@ -46,3 +46,17 @@ $(document).ready(function(){
     <div id="Selamet"> Burası birazdan kaldırılacaktır.</div>
 ```
  
+ trim() methodu -> 
+ ````
+$("button").click(function(){
+    var deger = $("input[name=deger]").val();
+    deger = $.trim();
+    if(!deger){
+        alert("Boş bırakmayın");
+    }
+})
+
+...
+<input type="text" name="Değer">
+<button>sonucu al</button>
+````
