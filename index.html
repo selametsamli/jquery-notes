@@ -6,20 +6,7 @@
 <script>
 $(document).ready(function(){
 
-   $("body").on("click","button",function(){
-              $(this).after('<button>Banada Tıkla</button>')
-    });
-    $("p").on({
-        click:function(){
-            $(this).after('<p>Burayada tıkla</p>');
-        }
-    });
-
-    $("a").on({
-        click:function(){
-            $("#selamet").append("<div> Bu yeni div </div>");
-        }
-    });
+   $("#Selamet li:last a").css("color","red");
 
 });
 
@@ -27,8 +14,18 @@ $(document).ready(function(){
 
 </head>
 <body>
-    <button>Buraya tıkla</button>
-    <a href="#">Tıkla</a>
-    <div id="selamet"></div>
+    <ul id="Selamet">
+        <li><a href="#">1. Tab</a></li>
+        <li><a href="#">2. Tab</a></li>
+        <li><a href="#">3. Tab</a></li>
+    </ul>
+
+    <ul>
+        <li><a href="#">1. Tab</a></li>
+        <li><a href="#">2. Tab</a></li>
+        <li><a href="#">3. Tab</a></li>
+    </ul>
+
+    
 </body>
 </html>

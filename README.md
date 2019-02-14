@@ -62,7 +62,7 @@ $("button").click(function(){
 ````
 
 - on() methodu -> 
-`````javascript
+````javascript
 $("body").on("click","button",function(){
     $(this).after('<button>Banada Tıkla</button>')
     });
@@ -92,3 +92,15 @@ $("body").on("click","button",function(){
     <div id="selamet"></div>
 
 ````
+
+- last Filtresi () -> son elemanı seçecer
+```javascript
+
+    $("#Selamet li:last a").css("color","red");
+    ...
+    <ul id="Selamet">
+        <li><a href="#">1. Tab</a></li>
+        <li><a href="#">2. Tab</a></li>
+        <li><a href="#">3. Tab</a></li>
+    </ul>
+```
