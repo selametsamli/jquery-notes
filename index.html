@@ -6,21 +6,21 @@
 <script>
 $(document).ready(function(){
 
-    $("p, a, .sinif, #id").hide().show()
-    $("p").css('color','red');
-    
-    var link = $('a').attr('href');
-    alert(link);
-    var link = $("a").removeAttr('href');
-    alert(link);
+    $.Selamet={
+        gonder:function(){
+            alert("İşlem başarılı");
+        },
+        onayla:function(isim){
+            alert('onaylandı '+isim)
+        }
+    }
 });
 </script>
 </head>
 <body>
 
-<p>Bu bir paragraftır.</p>
-<a href="www.deneme.com">Bu bir linktir</a>
-<div class="sinif">Bu bir divdir.</div>
-<div id="id">bu bir divdir2.</div>
+<input type="submit" onclick="$.Selamet.gonder()">
+<input type="submit" onclick="$.Selamet.onayla('selamet')">
+
 </body>
 </html>
