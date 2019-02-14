@@ -6,7 +6,9 @@
 <script>
 $(document).ready(function(){
 
-   $("#Selamet li:last a").css("color","red");
+    $("#Selamet li").each(function(index,element){
+        $(element).text("li - "+index)
+    })
 
 });
 

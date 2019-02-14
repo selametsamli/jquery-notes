@@ -93,10 +93,15 @@ $("body").on("click","button",function(){
 
 ````
 
-- last Filtresi () -> son elemanı seçecer
+- last Filtresi() -> son elemanı seçecer
 ```javascript
 
     $("#Selamet li:last a").css("color","red");
+
+    $("#Selamet li").each(function(index,element){
+        $(element).text("li - "+index)
+    })
+
     ...
     <ul id="Selamet">
         <li><a href="#">1. Tab</a></li>
