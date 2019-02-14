@@ -18,9 +18,7 @@ $(document).ready(function(){
         }
     }
 });
-
 ...
-
 <input type="submit" onclick="$.Selamet.gonder()">
 <input type="submit" onclick="$.Selamet.onayla('selamet')">
 ```
@@ -79,29 +77,23 @@ $("body").on("click","button",function(){
 - append() methodu -> seçtiğimiz divin sonuna ekleme yapar.
 
 ````javascript
-
     $("a").on({
         click:function(){
             $("#selamet").append("<div> Bu yeni div </div>");
         }
     });
-
     ...
-
     <a href="#">Tıkla</a>
     <div id="selamet"></div>
-
 ````
 
 - last Filtresi() -> son elemanı seçecer
 ```javascript
-
     $("#Selamet li:last a").css("color","red");
 
     $("#Selamet li").each(function(index,element){
         $(element).text("li - "+index)
     })
-
     ...
     <ul id="Selamet">
         <li><a href="#">1. Tab</a></li>
@@ -113,7 +105,6 @@ $("body").on("click","button",function(){
 - hover() ->
 
 ```javascript
-    
     $("#gel_buraya").hover(function(){
         $("#Selamet li").hide();
     },function(){
@@ -127,5 +118,19 @@ $("body").on("click","button",function(){
         <li><a href="#">2. Tab</a></li>
         <li><a href="#">3. Tab</a></li>
     </ul>
+```
 
+eq() -> seçim yaparken kullanılır
+
+```javascript
+    $("ul li").eq(4).css("background-color","lightgreen");
+    ...
+    ul id="Selamet">
+        <li><a href="#">1. Tab</a></li>
+        <li><a href="#">2. Tab</a></li>
+        <li><a href="#">3. Tab</a></li>
+        <li><a href="#">4. Tab</a></li>
+        <li><a href="#">5. Tab</a></li>
+        <li><a href="#">6. Tab</a></li>
+    </ul>
 ```
