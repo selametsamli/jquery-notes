@@ -109,3 +109,23 @@ $("body").on("click","button",function(){
         <li><a href="#">3. Tab</a></li>
     </ul>
 ```
+
+- hover() ->
+
+```javascript
+    
+    $("#gel_buraya").hover(function(){
+        $("#Selamet li").hide();
+    },function(){
+        $("#Selamet li").show();
+    })
+    ...
+    <div>
+        <p id="gel_buraya">gel buraya</p>
+    <ul id="Selamet">
+        <li><a href="#">1. Tab</a></li>
+        <li><a href="#">2. Tab</a></li>
+        <li><a href="#">3. Tab</a></li>
+    </ul>
+
+```
