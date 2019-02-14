@@ -120,7 +120,7 @@ $("body").on("click","button",function(){
     </ul>
 ```
 
-eq() -> seçim yaparken kullanılır
+- eq() -> seçim yaparken kullanılır
 
 ```javascript
     $("ul li").eq(4).css("background-color","lightgreen");
@@ -135,7 +135,7 @@ eq() -> seçim yaparken kullanılır
     </ul>
 ```
 
-parent() -> bir üst divi seçer.
+- parent() -> bir üst divi seçer.
 
 
 ```javascript
@@ -153,7 +153,7 @@ $("button").click(function(){
 </ul>
 ```
 
-serialize() methodu -> formdaki tüm verileri seçmeye yarar.
+- serialize() methodu -> formdaki tüm verileri seçmeye yarar.
 
 ```javascript
 $("button").click(function(e){
@@ -161,9 +161,7 @@ $("button").click(function(e){
     alert(deger);
     })
 ...
-
-<form action="" id="form1">
-    <table>
+<table>
         <tr>
             <td>Kullanıcı adı:</td>
             <td><input type="text" name="kadi"></td>
@@ -172,14 +170,19 @@ $("button").click(function(e){
             <td>E-Posta:</td>
             <td><input type="text" name="kadi"></td>
         </tr>
-        <tr>   
-            <td>Şifre:</td>
-            <td><input type="password" name="parola"></td>
-        </tr>
-        <tr>
-            <td><button name="kaydet">Kaydet</button></td>
-        </tr>
-    </table>
-</form>
+</table>
 
+```
+-  change() -> değişiklik varsa tetiklenir.
+
+```javascript
+$("#change").change(function(e){
+        var deger = $(this).val();
+        alert(deger)
+    })
+...
+<select name="Sehir" id="change">
+    <option value="rize">rize</option>
+    <option value="erzurum">erzurum</option>
+</select>     
 ```

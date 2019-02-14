@@ -6,9 +6,9 @@
 <script>
 $(document).ready(function(){
 
-    $("button").click(function(e){
-        var deger = $("#form1").serialize();
-        alert(deger);
+    $("#change").change(function(e){
+        var deger = $(this).val();
+        alert(deger)
     })
 
 });
@@ -18,25 +18,10 @@ $(document).ready(function(){
 </head>
 <body>
 <div>
-<form action="" id="form1">
-    <table>
-        <tr>
-            <td>Kullanıcı adı:</td>
-            <td><input type="text" name="kadi"></td>
-        </tr>
-        <tr>
-            <td>E-Posta:</td>
-            <td><input type="text" name="kadi"></td>
-        </tr>
-        <tr>   
-            <td>Şifre:</td>
-            <td><input type="password" name="parola"></td>
-        </tr>
-        <tr>
-            <td><button name="kaydet">Kaydet</button></td>
-        </tr>
-    </table>
-</form>        
+<select name="Sehir" id="change">
+    <option value="rize">rize</option>
+    <option value="erzurum">erzurum</option>
+</select>   
    
 </div>
 </body>
