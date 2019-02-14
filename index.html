@@ -6,21 +6,22 @@
 <script>
 $(document).ready(function(){
 
-    $.Selamet={
-        gonder:function(){
-            alert("İşlem başarılı");
-        },
-        onayla:function(isim){
-            alert('onaylandı '+isim)
-        }
-    }
+    $(".selamet li").click(function(){
+        var indis = $(this).index()
+       // alert(indis);
+       $("#Selamet").hide(100);
+    });
 });
 </script>
 </head>
 <body>
-
-<input type="submit" onclick="$.Selamet.gonder()">
-<input type="submit" onclick="$.Selamet.onayla('selamet')">
-
+    <div class="selamet">Bana Tıkla</div>
+    <ul class="selamet">
+        <li>1.Li</li>
+        <li>2.Li</li>
+        <li>3.Li</li>
+        <li>4.Li</li>
+    </ul>
+    <div id="Selamet"> Burası birazdan kaldırılacaktır.</div>
 </body>
 </html>
