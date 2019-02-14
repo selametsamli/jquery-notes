@@ -6,18 +6,21 @@
 <script>
 $(document).ready(function(){
 
-    $("button").click(function(){
-        var deger = $("input[name=deger]").val();
-        deger = $.trim();
-        if(!deger){
-            alert("Boş bırakmayın");
+   $("body").on("click","button",function(){
+              $(this).after('<button>Banada Tıkla</button>')
+    });
+    $("p").on({
+        click:function(){
+            $(this).after('<p>Burayada tıkla</p>');
         }
-    })
+    });
 });
+
 </script>
+
 </head>
 <body>
-    <input type="text" name="Değer">
-    <button>sonucu al</button>
+    <button>Buraya tıkla</button>
+    <p>Burayada tıkla</p>
 </body>
 </html>

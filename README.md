@@ -6,7 +6,7 @@
 - Nitelik atama -> var link = $('a').attr('href');
 - Nitelik silme -> var link = $('a').removeAttr('href);
 - Fonksiyon kullanımı -> 
-```
+```javascript
 $(document).ready(function(){
 
     $.Selamet={
@@ -26,7 +26,7 @@ $(document).ready(function(){
 ```
 
 - click() methodu ->
-```
+```javascript
 $(document).ready(function(){
 
     $(".selamet li").click(function(){
@@ -47,7 +47,7 @@ $(document).ready(function(){
 ```
  
  trim() methodu -> 
- ````
+ ````javascript
 $("button").click(function(){
     var deger = $("input[name=deger]").val();
     deger = $.trim();
@@ -59,4 +59,19 @@ $("button").click(function(){
 ...
 <input type="text" name="Değer">
 <button>sonucu al</button>
+````
+
+on() methodu -> 
+`````javascript
+$("body").on("click","button",function(){
+    $(this).after('<button>Banada Tıkla</button>')
+    });
+    $("p").on({
+        click:function(){
+            $(this).after('<p>Burayada tıkla</p>');
+        }
+    });
+...
+<button>Buraya tıkla</button>
+    <p>Burayada tıkla</p>
 ````
