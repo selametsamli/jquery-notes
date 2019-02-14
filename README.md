@@ -134,3 +134,21 @@ eq() -> seçim yaparken kullanılır
         <li><a href="#">6. Tab</a></li>
     </ul>
 ```
+
+parent() -> bir üst divi seçer.
+
+
+```javascript
+$("button").click(function(){
+        $(this).parent().parent().remove();
+    })
+...
+<ul id="Selamet">
+    <li><a href="#">1. Tab<button>Kapat</button></a></li>
+    <li><a href="#">2. Tab<button>Kapat</button></a></li>
+    <li><a href="#">3. Tab<button>Kapat</button></a></li>
+    <li><a href="#">4. Tab<button>Kapat</button></a></li>
+    <li><a href="#">5. Tab<button>Kapat</button></a></li>
+    <li><a href="#">6. Tab<button>Kapat</button></a></li>
+</ul>
+```

@@ -6,8 +6,9 @@
 <script>
 $(document).ready(function(){
 
-    $("ul li").eq(4).css("background-color","lightgreen");
-
+    $("button").click(function(){
+        $(this).parent().parent().remove();
+    })
     
 
 });
@@ -19,12 +20,12 @@ $(document).ready(function(){
     <div>
     <p id="gel_buraya">gel buraya</p>
     <ul id="Selamet">
-        <li><a href="#">1. Tab</a></li>
-        <li><a href="#">2. Tab</a></li>
-        <li><a href="#">3. Tab</a></li>
-        <li><a href="#">4. Tab</a></li>
-        <li><a href="#">5. Tab</a></li>
-        <li><a href="#">6. Tab</a></li>
+        <li><a href="#">1. Tab <button>Kapat</button></a></li>
+        <li><a href="#">2. Tab <button>Kapat</button></a></li>
+        <li><a href="#">3. Tab <button>Kapat</button></a></li>
+        <li><a href="#">4. Tab <button>Kapat</button></a></li>
+        <li><a href="#">5. Tab <button>Kapat</button></a></li>
+        <li><a href="#">6. Tab <button>Kapat</button></a></li>
     </ul>
 
    
