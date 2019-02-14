@@ -152,3 +152,34 @@ $("button").click(function(){
     <li><a href="#">6. Tab<button>Kapat</button></a></li>
 </ul>
 ```
+
+serialize() methodu -> formdaki tüm verileri seçmeye yarar.
+
+```javascript
+$("button").click(function(e){
+    var deger = $("#form1").serialize();
+    alert(deger);
+    })
+...
+
+<form action="" id="form1">
+    <table>
+        <tr>
+            <td>Kullanıcı adı:</td>
+            <td><input type="text" name="kadi"></td>
+        </tr>
+        <tr>
+            <td>E-Posta:</td>
+            <td><input type="text" name="kadi"></td>
+        </tr>
+        <tr>   
+            <td>Şifre:</td>
+            <td><input type="password" name="parola"></td>
+        </tr>
+        <tr>
+            <td><button name="kaydet">Kaydet</button></td>
+        </tr>
+    </table>
+</form>
+
+```
