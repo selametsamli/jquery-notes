@@ -14,6 +14,13 @@ $(document).ready(function(){
             $(this).after('<p>Burayada tıkla</p>');
         }
     });
+
+    $("a").on({
+        click:function(){
+            $("#selamet").append("<div> Bu yeni div </div>");
+        }
+    });
+
 });
 
 </script>
@@ -21,6 +28,7 @@ $(document).ready(function(){
 </head>
 <body>
     <button>Buraya tıkla</button>
-    <p>Burayada tıkla</p>
+    <a href="#">Tıkla</a>
+    <div id="selamet"></div>
 </body>
 </html>

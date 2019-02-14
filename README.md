@@ -61,7 +61,7 @@ $("button").click(function(){
 <button>sonucu al</button>
 ````
 
-on() methodu -> 
+- on() methodu -> 
 `````javascript
 $("body").on("click","button",function(){
     $(this).after('<button>Banada Tıkla</button>')
@@ -74,4 +74,21 @@ $("body").on("click","button",function(){
 ...
 <button>Buraya tıkla</button>
     <p>Burayada tıkla</p>
+````
+
+- append() methodu -> seçtiğimiz divin sonuna ekleme yapar.
+
+````javascript
+
+    $("a").on({
+        click:function(){
+            $("#selamet").append("<div> Bu yeni div </div>");
+        }
+    });
+
+    ...
+
+    <a href="#">Tıkla</a>
+    <div id="selamet"></div>
+
 ````
