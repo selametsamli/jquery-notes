@@ -6,11 +6,10 @@
 <script>
 $(document).ready(function(){
 
-    $("#change").change(function(e){
-        var deger = $(this).val();
-        alert(deger)
-    })
-
+    var deger =$('#div').html();
+    alert(deger);
+    $("#div2").html(deger);
+    
 });
 
 </script>
@@ -18,10 +17,10 @@ $(document).ready(function(){
 </head>
 <body>
 <div>
-<select name="Sehir" id="change">
-    <option value="rize">rize</option>
-    <option value="erzurum">erzurum</option>
-</select>   
+    <div id="div" class="selamet"> <strong> bir</strong> Deneme</div>
+    <div id="div2"></div>
+    <input type="text" name deger1>
+    <button class="class ">İşlem yap</button>
    
 </div>
 </body>

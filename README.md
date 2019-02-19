@@ -186,3 +186,17 @@ $("#change").change(function(e){
     <option value="erzurum">erzurum</option>
 </select>     
 ```
+- html() -> html kodu ile birlikte değeri alır, değer atama işlemi görür
+- text() -> yazılan değeri alır
+
+```javascript
+
+var deger =$('#div').html();
+alert(deger);
+$("#div2").html(deger);
+...
+<div id="div" class="selamet"> <strong> bir</strong> Deneme</div>
+<div id="div2"></div>
+<input type="text" name deger1>
+<button class="class ">İşlem yap</button>
+```
