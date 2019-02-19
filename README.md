@@ -245,3 +245,11 @@ $(".deneme").wrap('<div class="selamet1"></div>')
 ...
 <div class="deneme">Bu bir deneme dividir</div>
 ```
+
+- next() -> seçili olan class veya id den sonrası üzerinde işlem gerçekleştirir.
+
+```javascript
+$("#input").next().hide();
+...
+<input type="text" name=deger1 id=input value="ara">
+```
