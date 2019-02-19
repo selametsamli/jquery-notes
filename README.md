@@ -272,3 +272,24 @@ $("button").one("click",function(){
 <button>Göster/gizle</button>
 <span>deneme</span>
 ```
+
+- submit() -> formlarda post işlemi gerçekleştiri
+
+```javascript
+$(".deneme").click(function(){
+        $("form").submit(function(){
+            var deger = $("input[name=deneme]").val();
+            alert(deger);
+            if(deger == ''){
+                alert("boş")
+                return false;
+            }
+            return true;
+        }).submit();
+    });
+...
+<div class="deneme">Formu post et</div>
+<form method="POST">
+    <input type="text" name=deneme/>
+</form>
+```

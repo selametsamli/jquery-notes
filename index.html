@@ -6,8 +6,16 @@
 <script>
 $(document).ready(function(){
 
-    $("button").one("click",function(){
-        $("span").toggle();
+    $(".deneme").click(function(){
+        $("form").submit(function(){
+            var deger = $("input[name=deneme]").val();
+            alert(deger);
+            if(deger == ''){
+                alert("boş")
+                return false;
+            }
+            return true;
+        }).submit();
     });
 
 });
@@ -18,9 +26,10 @@ $(document).ready(function(){
 <body>
 <div>
 
-    <button>Göster/gizle</button>
-    <span>deneme</span>
-
+<div class="deneme">Formu post et</div>
+<form method="POST">
+    <input type="text" name=deneme/>
+</form>
 </div>
 </body>
 </html>
