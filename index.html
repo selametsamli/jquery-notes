@@ -6,22 +6,20 @@
 <script>
 $(document).ready(function(){
 
-    $("img").error(function(){
-        $(this).attr("src","eklenecek url")
+    $("button").one("click",function(){
+        $("span").toggle();
     });
 
 });
 
 </script>
-<style type="text/css">
-    .selamet1 {background: lightblue;border: 5px solid #ddd;padding: 10px}
-</style>
+
 </head>
 <body>
 <div>
 
-    <input type="text" name=deger1 id=input value="ara">
-   <div class="selamet1" id="div">Bu bir normal div</div>
+    <button>Göster/gizle</button>
+    <span>deneme</span>
 
 </div>
 </body>

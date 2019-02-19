@@ -261,3 +261,14 @@ $("img").error(function(){
         $(this).attr("src","eklenecek url")
 });
 ```
+
+- one() -> Tek bir kez çalışır
+
+```javascript
+$("button").one("click",function(){
+        $("span").toggle();
+});    
+...
+<button>Göster/gizle</button>
+<span>deneme</span>
+```
