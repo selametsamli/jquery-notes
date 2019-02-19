@@ -200,3 +200,13 @@ $("#div2").html(deger);
 <input type="text" name deger1>
 <button class="class ">İşlem yap</button>
 ```
+
+- val() -> form elemanlarını alıp üzerinde işlem gerçekleştirir
+
+```javascript
+$('button').click(function(e){
+    $('input').val("yeni değer")
+});
+...
+<input type="text" name deger1>
+```
