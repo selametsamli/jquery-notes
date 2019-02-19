@@ -253,3 +253,11 @@ $("#input").next().hide();
 ...
 <input type="text" name=deger1 id=input value="ara">
 ```
+
+- error() ->
+
+```javascript
+$("img").error(function(){
+        $(this).attr("src","eklenecek url")
+});
+```
