@@ -9,7 +9,8 @@ $(document).ready(function(){
     var clone=$("#div").clone();
     $("#div").after(clone);
 
-    
+    $(".deneme").wrap('<div class="selamet1"></div>')
+
 });
 
 </script>
@@ -19,9 +20,11 @@ $(document).ready(function(){
 </head>
 <body>
 <div>
-    
+
     <input type="text" name=deger1>
    <div class="selamet1" id="div">Bu bir normal div</div>
+
+   <div class="deneme">Bu bir deneme dividir</div>
 </div>
 </body>
 </html>

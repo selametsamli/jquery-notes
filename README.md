@@ -237,3 +237,11 @@ $("#div").after(clone);
 ...
 <div class="selamet1" id="div">Bu bir normal div</div>
 ```
+
+- wrap() -> seçilen nesneyi classın içerisine dahil eder
+
+```javascript
+$(".deneme").wrap('<div class="selamet1"></div>')
+...
+<div class="deneme">Bu bir deneme dividir</div>
+```
