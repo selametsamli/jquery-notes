@@ -228,3 +228,12 @@ $("#div").click(function(e){
 <div id="div" class="selamet1">  bir Deneme</div>
 
 ```
+
+- clone() ->
+
+```javascript
+var clone=$("#div").clone();
+$("#div").after(clone);
+...
+<div class="selamet1" id="div">Bu bir normal div</div>
+```

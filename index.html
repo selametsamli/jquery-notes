@@ -6,25 +6,22 @@
 <script>
 $(document).ready(function(){
 
-    $("#div").click(function(e){
-        $(this).toggleClass("selamet2")
-    });
+    var clone=$("#div").clone();
+    $("#div").after(clone);
+
     
 });
 
 </script>
 <style type="text/css">
     .selamet1 {background: lightblue;border: 5px solid #ddd;padding: 10px}
-    .selamet2 {background: green;border: 5px solid #ddd;padding: 10px}
 </style>
 </head>
 <body>
 <div>
-    <div id="div" class="selamet1"> <strong> bir</strong> Deneme</div>
-    <div id="div2"></div>
-    <input type="text" name deger1>
-    <button class="class ">İşlem yap</button>
-   
+    
+    <input type="text" name=deger1>
+   <div class="selamet1" id="div">Bu bir normal div</div>
 </div>
 </body>
 </html>
