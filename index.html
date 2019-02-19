@@ -6,18 +6,21 @@
 <script>
 $(document).ready(function(){
 
-    $('button').click(function(e){
-        $('input').val("yeni değer")
+    $("#div").click(function(e){
+        $(this).toggleClass("selamet2")
     });
     
 });
 
 </script>
-
+<style type="text/css">
+    .selamet1 {background: lightblue;border: 5px solid #ddd;padding: 10px}
+    .selamet2 {background: green;border: 5px solid #ddd;padding: 10px}
+</style>
 </head>
 <body>
 <div>
-    <div id="div" class="selamet"> <strong> bir</strong> Deneme</div>
+    <div id="div" class="selamet1"> <strong> bir</strong> Deneme</div>
     <div id="div2"></div>
     <input type="text" name deger1>
     <button class="class ">İşlem yap</button>

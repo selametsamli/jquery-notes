@@ -210,3 +210,21 @@ $('button').click(function(e){
 ...
 <input type="text" name deger1>
 ```
+
+- toggleClass() -> toggle mantığı ile sınıf değiştirir
+- addClass()-> sınıf atama
+- removeClass()-> sınıf silme
+
+```javascript
+$("#div").click(function(e){
+        $(this).toggleClass("selamet2")
+});
+...
+<style type="text/css">
+    .selamet1 {background: lightblue;border: 5px solid #ddd;padding: 10px}
+    .selamet2 {background: green;border: 5px solid #ddd;padding: 10px}
+</style>
+...
+<div id="div" class="selamet1">  bir Deneme</div>
+
+```
