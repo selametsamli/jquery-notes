@@ -6,16 +6,8 @@
 <script>
 $(document).ready(function(){
 
-    $(".deneme").click(function(){
-        $("form").submit(function(){
-            var deger = $("input[name=deneme]").val();
-            alert(deger);
-            if(deger == ''){
-                alert("boş")
-                return false;
-            }
-            return true;
-        }).submit();
+    $(".form").on('keyup', function (e) {
+        console.log("degisti");
     });
 
 });
@@ -26,8 +18,8 @@ $(document).ready(function(){
 <body>
 <div>
 
-<div class="deneme">Formu post et</div>
-<form method="POST">
+
+<form class="form" method="POST">
     <input type="text" name=deneme/>
 </form>
 </div>

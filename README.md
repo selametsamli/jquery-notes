@@ -293,3 +293,15 @@ $(".deneme").click(function(){
     <input type="text" name=deneme/>
 </form>
 ```
+
+- keyup()->
+
+```javascript
+$(".form").on('keyup', function (e) {
+        console.log("degisti");
+});
+...
+<form class="form" method="POST">
+    <input type="text" name=deneme/>
+</form>
+```
